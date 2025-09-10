@@ -50,6 +50,7 @@ export interface CardProps {
   padding?: 'sm' | 'md' | 'lg';
   shadow?: boolean;
   border?: boolean;
+  style?: React.CSSProperties;
 }
 
 // Shopping Cart specific types

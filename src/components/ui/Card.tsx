@@ -7,6 +7,7 @@ const Card: React.FC<CardProps> = ({
   padding = 'md',
   shadow = true,
   border = false,
+  style,
 }) => {
   const classes = [
     'card',
@@ -17,7 +18,7 @@ const Card: React.FC<CardProps> = ({
   ].filter(Boolean).join(' ');
 
   return (
-    <div className={classes}>
+    <div className={classes} style={style}>
       {children}
     </div>
   );
